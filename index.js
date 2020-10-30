@@ -17,11 +17,6 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'toc',
-        message: 'Please enter a table of contents, each item separated by a comma.'
-    },
-    {
-        type: 'input',
         name: 'install',
         message: 'Please enter installation instructions.'
     },
@@ -75,6 +70,9 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
+    inquirer.prompt(questions).then((answers) => {
+        console.log(JSON.stringify(answers, null, ' '));
+    })
 
 }
 
