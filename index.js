@@ -80,41 +80,43 @@ function init() {
 
 const generateFile = answers => {
     return `
-    # ${answers.title}
+## ${answers.title}
 
-    # Description of the project
-    ${answers.description}
+# Description of the project
+${answers.description}
     
-    ## Table of Contents
-    - [instructions](#-Installation-Instructions)
-    - [How it is used](#-How-the-Project-Should-Be-Used)
-    - [License](#-License)
-    - [Contribution](#-Contribution-Guidelines)
-    - [Testing](#-Test-Instructions)
-    - [Questions](#-Questions)
+# Table of Contents
+- [instructions](#-Installation-Instructions)
+- [How it is used](#-How-the-Project-Should-Be-Used)
+- [License](#-License)
+- [Contribution](#-Contribution-Guidelines)
+- [Testing](#-Test-Instructions)
+- [Questions](#-Questions)
     
-    # Installation Instructions
-    ${answers.install} 
+# Installation Instructions
+${answers.install} 
     
-    # How the Project Should Be Used
-    ${answers.useage}
+# How the Project Should Be Used
+${answers.useage}
     
-    # License 
-    Choose from a list of options.
+# License 
+${answers.license}
     
-    # Contribution Guidelines
-    Insert Contribution guidelines here.
+# Contribution Guidelines
+${answers.guidelines}
     
-    # Test Instructions
-    Insert Test instructions here.
+# Test Instructions
+${answers.testing}
     
-    # Questions
-    [github user name](https://github.com/pmhagwood/) 
+# Questions
+Get in touch with any questions by visiting my github:
+[${answers.userid}](https://github.com/${answers.userid}/) 
+  
+Or you can email me at:
+[${answers.email}](mailto:${answers.email})
     
-    [email](https://github.com/pmhagwood/weatherdashboard)
-    
-    `;
-  };
+`;
+};
 
 // function call to initialize program
 init();

@@ -1,35 +1,36 @@
 
-    # Paul's Super Cool Amazing Project
+## Paul's Project
 
-    # Description of the project
-    You have this amazing project, and you do amazing things and it's amazing.
+# Description of the project
+Description goes here.
     
-    ## Table of Contents
-    - [instructions](#-Installation-Instructions)
-    - [How it is used](#-How-the-Project-Should-Be-Used)
-    - [License](#-License)
-    - [Contribution](#-Contribution-Guidelines)
-    - [Testing](#-Test-Instructions)
-    - [Questions](#-Questions)
+## Table of Contents
+- [instructions](#-Installation-Instructions)
+- [How it is used](#-How-the-Project-Should-Be-Used)
+- [License](#-License)
+- [Contribution](#-Contribution-Guidelines)
+- [Testing](#-Test-Instructions)
+- [Questions](#-Questions)
     
-    # Installation Instructions
-    Install it and be amazed. 
+# Installation Instructions
+install goes here. 
     
-    # How the Project Should Be Used
-    In amazing ways.
+# How the Project Should Be Used
+Useage Goes here.
     
-    # License 
-    Choose from a list of options.
+# License 
+
     
-    # Contribution Guidelines
-    Insert Contribution guidelines here.
+# Contribution Guidelines
+Contributors go here.
     
-    # Test Instructions
-    Insert Test instructions here.
+# Test Instructions
+testing goes here.
     
-    # Questions
-    [github user name](https://github.com/pmhagwood/) 
-    
-    [email](https://github.com/pmhagwood/weatherdashboard)
-    
+# Questions
+Get in touch with any questions by visiting my github:
+[pmhagwood](https://github.com/pmhagwood/) 
+  
+Or you can email me at:
+[pmhagwood@gmail.com](mailto:pmhagwood@gmail.com)
     
