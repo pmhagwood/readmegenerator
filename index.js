@@ -25,14 +25,14 @@ const questions = [
         message: 'How will this project be used?'
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
         message: 'Choose a license.',
         choices: [
             "MIT License",
             "Apache License",
             "GPL License",
-            "Other"
+            "Unlicensed"
         ]
     },
     {
@@ -82,6 +82,8 @@ const generateFile = answers => {
     return `
 # ${answers.title}
 
+${answers.license === "MIT License" ? "[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)" : answers.license === "Apache License" ? "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)" : answers.license === "GPL License" ? "[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)" : "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"}
+
 ## Description of the project
 ${answers.description}
     
@@ -100,7 +102,7 @@ ${answers.install}
 ${answers.useage}
     
 ## License 
-${answers.license}
+${answers.license === "MIT License" ? "This application uses The MIT License" : answers.license === "Apache License" ? "This application uses The Apache License" : answers.license === "GPL License" ? "This application uses The GPL License" : "This application is unlicensed"}
     
 ## Contribution Guidelines
 ${answers.guidelines}
