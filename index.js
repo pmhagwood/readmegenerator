@@ -80,12 +80,12 @@ function init() {
 
 const generateFile = answers => {
     return `
-## ${answers.title}
+# ${answers.title}
 
-# Description of the project
+## Description of the project
 ${answers.description}
     
-# Table of Contents
+## Table of Contents
 - [instructions](#-Installation-Instructions)
 - [How it is used](#-How-the-Project-Should-Be-Used)
 - [License](#-License)
@@ -93,22 +93,22 @@ ${answers.description}
 - [Testing](#-Test-Instructions)
 - [Questions](#-Questions)
     
-# Installation Instructions
+## Installation Instructions
 ${answers.install} 
     
-# How the Project Should Be Used
+## How the Project Should Be Used
 ${answers.useage}
     
-# License 
+## License 
 ${answers.license}
     
-# Contribution Guidelines
+## Contribution Guidelines
 ${answers.guidelines}
     
-# Test Instructions
+## Test Instructions
 ${answers.testing}
     
-# Questions
+## Questions
 Get in touch with any questions by visiting my github:
 [${answers.userid}](https://github.com/${answers.userid}/) 
   

@@ -1,8 +1,8 @@
 
-## Paul's Project
+# Name
 
-# Description of the project
-Description goes here.
+## Description of the project
+Descrpt
     
 ## Table of Contents
 - [instructions](#-Installation-Instructions)
@@ -12,22 +12,22 @@ Description goes here.
 - [Testing](#-Test-Instructions)
 - [Questions](#-Questions)
     
-# Installation Instructions
-install goes here. 
+## Installation Instructions
+instruct 
     
-# How the Project Should Be Used
-Useage Goes here.
+## How the Project Should Be Used
+use
     
-# License 
+## License 
 
     
-# Contribution Guidelines
-Contributors go here.
+## Contribution Guidelines
+contribue
     
-# Test Instructions
-testing goes here.
+## Test Instructions
+test
     
-# Questions
+## Questions
 Get in touch with any questions by visiting my github:
 [pmhagwood](https://github.com/pmhagwood/) 
   
