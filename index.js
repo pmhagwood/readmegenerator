@@ -1,7 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const util = require('util');
-const writeFileAsync = util.promisify(fs.writeFile);
+
 
 // array of questions for user
 const questions = [
@@ -72,9 +71,50 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((answers) => {
         console.log(JSON.stringify(answers, null, ' '));
+        const response = generateFile(answers);
+
+        writeToFile("README.md", response);
     })
 
 }
+
+const generateFile = answers => {
+    return `
+    # ${answers.title}
+
+    # Description of the project
+    ${answers.description}
+    
+    ## Table of Contents
+    - [instructions](#-Installation-Instructions)
+    - [How it is used](#-How-the-Project-Should-Be-Used)
+    - [License](#-License)
+    - [Contribution](#-Contribution-Guidelines)
+    - [Testing](#-Test-Instructions)
+    - [Questions](#-Questions)
+    
+    # Installation Instructions
+    ${answers.install} 
+    
+    # How the Project Should Be Used
+    ${answers.useage}
+    
+    # License 
+    Choose from a list of options.
+    
+    # Contribution Guidelines
+    Insert Contribution guidelines here.
+    
+    # Test Instructions
+    Insert Test instructions here.
+    
+    # Questions
+    [github user name](https://github.com/pmhagwood/) 
+    
+    [email](https://github.com/pmhagwood/weatherdashboard)
+    
+    `;
+  };
 
 // function call to initialize program
 init();
