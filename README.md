@@ -1,10 +1,10 @@
 
-# Paul
+# Read Me Generator
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
 ## Description of the project
-Description
+An application running with node.js on the users terminal to create a README.md file used along with a github project.
     
 ## Table of Contents
 - [instructions](#-Installation-Instructions)
@@ -15,19 +15,19 @@ Description
 - [Questions](#-Questions)
     
 ## Installation Instructions
-Install 
+Run a git pull on github and save the files. Make sure to run npm install inquirer. 
     
 ## How the Project Should Be Used
-Readme
+Used with github to provide an application a read me file.
     
 ## License 
-This application uses The Apache License
+This application is unlicensed
     
 ## Contribution Guidelines
-Download
+Please see contact questions.
     
 ## Test Instructions
-test
+Download and run node.js.
     
 ## Questions
 Get in touch with any questions by visiting my github:
